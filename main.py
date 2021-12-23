@@ -2,8 +2,6 @@ import sqlite3
 import pandas as pd
 import re
 
-def clear_tags(value):
-    return re.sub(r'<[^>]*>', '', str(value))
 
 def main():
     con = sqlite3.connect('works.sqlite')
